@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Manos Artesanas - Tienda de artesanías hechas a mano: tejidos, cerámicas y pinturas.">
+    <title>Manos Artesanas | Artesanías Hechas a Mano</title>
+    <link rel="stylesheet" href="estilosIA.css">
+</head>
+<body>
+
+    <!-- Encabezado y Navegación Principal -->
+    <header class="header-principal">
+        <div class="contenedor header-contenido">
+            <h1 class="logo">Manos Artesanas</h1>
+            <nav class="navegacion-principal" aria-label="Navegación principal">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nosotros">Información</a></li>
+                    <li><a href="#articulos">Artículos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="contenido-principal">
+
+        <!-- Sección de Inicio / Banner -->
+        <section id="inicio" class="hero">
+            <div class="contenedor hero-contenido">
+                <h2>El arte de crear con el corazón</h2>
+                <p>Piezas únicas hechas a mano con dedicación, tradición y materiales sostenibles.</p>
+                <a href="#articulos" class="boton boton-primario">Ver Colección</a>
+            </div>
+        </section>
+
+        <!-- Sección Información del Emprendimiento y del Sitio -->
+        <section id="nosotros" class="seccion contenedor">
+            <h2>Información del Emprendimiento</h2>
+            
+            <div class="nosotros-grid">
+                <!-- Información del Emprendimiento -->
+                <article class="bloque-informacion">
+                    <h3>Sobre Manos Artesanas</h3>
+                    <p>Somos un taller artesanal dedicado a preservar las técnicas tradicionales de confección, alfarería y pintura. Cada una de nuestras piezas es moldeada y elaborada completamente a mano, garantizando un objeto exclusivo y de alta calidad.</p>
+                    <p>Creemos en el comercio justo, la sostenibilidad y en devolverle el valor a los procesos hechos con dedicación, paciencia y respeto por los materiales naturales.</p>
+                </article>
+
+                <!-- Información de Mantenimiento del Sitio Web -->
+                <article class="bloque-informacion tarjeta-mantenimiento">
+                    <h3>Acerca de este sitio web</h3>
+                    <p>Este sitio web ha sido diseñado para difundir y comercializar nuestro catálogo de artesanías de forma clara, accesible y sostenible.</p>
+                    
+                    <dl class="datos-responsable">
+                        <div class="linea-dato">
+                            <dt>Responsable del sitio:</dt>
+                            <dd>María Giménez</dd>
+                        </div>
+                        <div class="linea-dato">
+                            <dt>Rol:</dt>
+                            <dd>Diseño, Desarrollo y Mantenimiento Web</dd>
+                        </div>
+                        <div class="linea-dato">
+                            <dt>Contacto técnico:</dt>
+                            <dd><a href="mailto:soporte@manosartesanas.com">soporte@manosartesanas.com</a></dd>
+                        </div>
+                    </dl>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección de Artículos (Filtros sin JS usando CSS :checked) -->
+        <section id="articulos" class="seccion contenedor">
+            <h2>Nuestra Galería de Artículos</h2>
+            <p class="subtitulo-seccion">Selecciona una categoría para explorar nuestros productos:</p>
+
+            <div class="galeria-articulos">
+                <!-- Radio inputs para filtrado en CSS -->
+                <input type="radio" name="categoria" id="cat-todos" class="input-filtro" checked>
+                <input type="radio" name="categoria" id="cat-tejidos" class="input-filtro">
+                <input type="radio" name="categoria" id="cat-ceramicas" class="input-filtro">
+                <input type="radio" name="categoria" id="cat-pinturas" class="input-filtro">
+
+                <!-- Etiquetas/Botones de categoría -->
+                <div class="controles-filtro" role="group" aria-label="Filtrar por categoría de artesanía">
+                    <label for="cat-todos" class="etiqueta-filtro">Todos</label>
+                    <label for="cat-tejidos" class="etiqueta-filtro">Tejidos</label>
+                    <label for="cat-ceramicas" class="etiqueta-filtro">Cerámicas</label>
+                    <label for="cat-pinturas" class="etiqueta-filtro">Pinturas</label>
+                </div>
+
+                <!-- Lista de Productos -->
+                <div class="grid-productos">
+
+                    <!-- TEJIDOS -->
+                    <article class="tarjeta-producto tejido">
+                        <img src="articulos/tejidos/articulo1.png" alt="Manta de lana natural de oveja tejida a telar" class="imagen-producto">
+                        <div class="cuerpo-tarjeta">
+                            <span class="categoria-etiqueta">Tejidos</span>
+                            <h3>Manta Artesanal de Lana</h3>
+                            <p>Manta abrigada y suave tejida a mano con hilo de lana natural en telar tradicional.</p>
+                            <a href="articulos/tejidos/articulo1.pdf" class="boton-pdf" target="_blank" aria-label="Ver ficha técnica en PDF de Manta Artesanal de Lana">
+                                Consultar detalles (PDF)
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-producto tejido">
+                        <img src="articulos/tejidos/articulo2.png" alt="Bufanda de hilo de algodón con diseño geométrico" class="imagen-producto">
+                        <div class="cuerpo-tarjeta">
+                            <span class="categoria-etiqueta">Tejidos</span>
+                            <h3>Bufanda Etno-Algodón</h3>
+                            <p>Bufanda liviana elaborada en algodón orgánico teñido con tintes vegetales.</p>
+                            <a href="articulos/tejidos/articulo2.pdf" class="boton-pdf" target="_blank" aria-label="Ver ficha técnica en PDF de Bufanda Etno-Algodón">
+                                Consultar detalles (PDF)
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-producto tejido">
+                        <img src="articulos/tejidos/articulo3.png" alt="Cojín decorativo tejido a crochet con patrones florales" class="imagen-producto">
+                        <div class="cuerpo-tarjeta">
+                            <span class="categoria-etiqueta">Tejidos</span>
+                            <h3>Funda de Cojín Crochet</h3>
+                            <p>Funda para cojín con relieve y detalles florales hechos minuciosamente a ganchillo.</p>
+                            <a href="articulos/tejidos/articulo3.pdf" class="boton-pdf" target="_blank" aria-label="Ver ficha técnica en PDF de Funda de Cojín Crochet">
+                                Consultar detalles (PDF)
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- CERÁMICAS -->
+                    <article class="tarjeta-producto ceramica">
+                        <img src="articulos/ceramicas/articulo1.png" alt="Jarrón de barro modelado a mano con acabado rústico" class="imagen-producto">
+                        <div class="cuerpo-tarjeta">
+                            <span class="categoria-etiqueta">Cerámicas</span>
+                            <h3>Jarrón de Barro Rústico</h3>
+                            <p>Pieza decorativa única moldeada en torno manual y horneada a alta temperatura.</p>
+                            <a href="articulos/ceramicas/articulo1.pdf" class="boton-pdf" target="_blank" aria-label="Ver ficha técnica en PDF de Jarrón de Barro Rústico">
+                                Consultar detalles (PDF)
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-producto ceramica">
+                        <img src="articulos/ceramicas/articulo2.png" alt="Juego de tazas de cerámica esmaltadas en tonos azul turquesa" class="imagen-producto">
+                        <div class="cuerpo-tarjeta">
+                            <span class="categoria-etiqueta">Cerámicas</span>
+                            <h3>Juego de Tazas Artesanales</h3>
+                            <p>Set de dos tazas para café con esmalte cerámico libre de plomo, aptas para microondas.</p>
+                            <a href="articulos/ceramicas/articulo2.pdf" class="boton-pdf" target="_blank" aria-label="Ver ficha técnica en PDF de Juego de Tazas Artesanales">
+                                Consultar detalles (PDF)
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-producto ceramica">
+                        <img src="articulos/ceramicas/articulo3.png" alt="Plato decorativo cerámico barnizado con motivos botánicos" class="imagen-producto">
+                        <div class="cuerpo-tarjeta">
+                            <span class="categoria-etiqueta">Cerámicas</span>
+                            <h3>Plato Botánico</h3>
+                            <p>Plato ornamental ilustrado a mano con grabado de hojas autóctonas y acabado brillante.</p>
+                            <a href="articulos/ceramicas/articulo3.pdf" class="boton-pdf" target="_blank" aria-label="Ver ficha técnica en PDF de Plato Botánico">
+                                Consultar detalles (PDF)
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- PINTURAS -->
+                    <article class="tarjeta-producto pintura">
+                        <img src="articulos/pinturas/articulo1.png" alt="Pintura al óleo sobre lienzo representando un paisaje montañoso al atardecer" class="imagen-producto">
+                        <div class="cuerpo-tarjeta">
+                            <span class="categoria-etiqueta">Pinturas</span>
+                            <h3>Lienzo Atardecer Andino</h3>
+                            <p>Obra original pintada al óleo con espátula, llena de textura y colores cálidos.</p>
+                            <a href="articulos/pinturas/articulo1.pdf" class="boton-pdf" target="_blank" aria-label="Ver ficha técnica en PDF de Lienzo Atardecer Andino">
+                                Consultar detalles (PDF)
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-producto pintura">
+                        <img src="articulos/pinturas/articulo2.png" alt="Acuarela original sobre papel de textura de grano grueso con motivo floral" class="imagen-producto">
+                        <div class="cuerpo-tarjeta">
+                            <span class="categoria-etiqueta">Pinturas</span>
+                            <h3>Acuarela Botánica</h3>
+                            <p>Pintura delicada en acuarela montada sobre soporte de madera tratada.</p>
+                            <a href="articulos/pinturas/articulo2.pdf" class="boton-pdf" target="_blank" aria-label="Ver ficha técnica en PDF de Acuarela Botánica">
+                                Consultar detalles (PDF)
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-producto pintura">
+                        <img src="articulos/pinturas/articulo3.png" alt="Cuadro en acrílico con arte abstracto en tonos tierra" class="imagen-producto">
+                        <div class="cuerpo-tarjeta">
+                            <span class="categoria-etiqueta">Pinturas</span>
+                            <h3>Cuadro Abstracción Earth</h3>
+                            <p>Composición moderna en acrílico que combina tonalidades terracota y pigmentos dorados.</p>
+                            <a href="articulos/pinturas/articulo3.pdf" class="boton-pdf" target="_blank" aria-label="Ver ficha técnica en PDF de Cuadro Abstracción Earth">
+                                Consultar detalles (PDF)
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Formulario de Contacto -->
+        <section id="contacto" class="seccion contenedor fondo-suave">
+            <h2>Contacto</h2>
+            <p class="subtitulo-seccion">¿Tienes alguna consulta o deseas un pedido personalizado? Escríbenos.</p>
+
+            <form action="#" method="post" class="formulario-contacto">
+                <div class="campo-formulario">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Ej. María García">
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" required placeholder="Ej. maria@ejemplo.com">
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="asunto">Asunto:</label>
+                    <input type="text" id="asunto" name="asunto" required placeholder="Ej. Consulta por pedido especial">
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Escribe aquí tu mensaje..."></textarea>
+                </div>
+
+                <button type="submit" class="boton boton-primario">Enviar Mensaje</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer-principal">
+        <div class="contenedor footer-contenido">
+            <p>&copy; 2026 Manos Artesanas. Todos los derechos reservados.</p>
+            <p>Artesanías sostenibles y hechas a mano.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
